@@ -50,6 +50,12 @@ break point choices
     transform: translateY(0px);
     opacity: 1; } }
 
+@keyframes cursor-anim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -116,9 +122,12 @@ body {
         letter-spacing: 1rem;
         font-size: 10rem; } }
   .primery-title--sub {
-    font-size: 2rem;
-    display: block;
-    letter-spacing: 1.7rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    letter-spacing: .8rem;
     animation: moveRightoLeft 1.5s ease-out;
     /* adjustment */
     margin-bottom: 5rem;
@@ -1037,6 +1046,14 @@ body {
 
 .book {
   box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.3); }
+
+.cursor {
+  height: 2.8rem;
+  width: 1rem;
+  margin-bottom: .3rem;
+  background-color: yellow;
+  align-content: stretch;
+  animation: cursor-anim 1.2s infinite; }
 
 .section-about {
   background-color: black;
