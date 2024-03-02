@@ -131,6 +131,7 @@ body {
     animation: moveRightoLeft 1.5s ease-out;
     /* adjustment */
     margin-bottom: 5rem;
+    transition: all .5s;
     text-wrap: nowrap; }
     @media (max-width: 600px) {
       .primery-title--sub {
@@ -1053,7 +1054,7 @@ body {
   margin-bottom: .3rem;
   background-color: yellow;
   align-content: stretch;
-  animation: cursor-anim 1.2s infinite; }
+  animation: cursor-anim 1s ease-out 2s infinite; }
 
 .section-about {
   background-color: black;

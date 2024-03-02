@@ -46,7 +46,7 @@ body{
         animation: moveRightoLeft 1.5s ease-out;
         /* adjustment */
         margin-bottom: 5rem;
-
+        transition: all .5s;
         text-wrap: nowrap;
 
         @include respond(phone){
