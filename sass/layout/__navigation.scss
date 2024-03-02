@@ -9,7 +9,7 @@
         height: 7rem;
         width: 7rem;
         top: 6rem;
-        right: 6rem;
+        left: 6rem;
         background-color: $color-gray-light-1;
         border-radius: 50%;
         text-align: center;
@@ -26,7 +26,7 @@
         border-radius: 50%;
         position: fixed;
         top: 6.5rem;
-        right: 6.5rem;
+        left: 6.5rem;
         z-index: 100;
         transition: transform .5s;
     }
