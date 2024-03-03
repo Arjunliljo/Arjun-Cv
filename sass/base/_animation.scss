@@ -2,15 +2,33 @@
     
     0%{
         opacity: 0;
-        transform: translateX(300px);
+        transform: translateY(30px);
     }
 
     60%{
         opacity: .6;
+        // visibility: visible;
     }   
     100%{
         opacity: 1;
-        transform: translateX(0px) ;
+        transform: translateY(0px) ;
+    }
+
+}
+@keyframes main-img-anim-phone{
+    
+    0%{
+        opacity: 0;
+       // transform: translateY(-30px);
+    }
+
+    60%{
+        opacity: .6;
+        // visibility: visible;
+    }   
+    100%{
+        opacity: 1;
+       // transform: translateY(0px) ;
     }
 
 }

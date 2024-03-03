@@ -11,8 +11,8 @@ const subHeading = document.querySelector('.primery-title--sub');
 
 //cursor
 // const dev = ['D', 'E', 'V', 'E', 'L', 'O', 'P', 'E', 'R'];
-
 const devHtml = document.querySelector('.dev');
+const cursor = document.querySelector('.cursor');
 
 const dev = 'DEVELOPER ';
 const length = dev.length;
@@ -26,6 +26,7 @@ function startAnimLeftToRight() {
 
     const devAnim = setInterval(() => {
 
+        cursor.style.animation = 'none';
         let dev = '';
 
         if (devCount % 2 === 0) dev = 'DEVELOPER ';
@@ -37,10 +38,11 @@ function startAnimLeftToRight() {
         if (i === dev.length) {
             clearInterval(devAnim);
             i = 0;
+            cursor.style.animation = 'cursor-anim 1.5s ease-out .5s infinite';
             devCount++;
             setTimeout(() => {
                 startAnimLeftToRight();
-            }, 3000);
+            }, 4000);
         };
 
     }, 500);
@@ -48,7 +50,9 @@ function startAnimLeftToRight() {
 }
 startAnimLeftToRight();
 
-//Event listeners
-discover.addEventListener('click', () => {
-    sectionTours.scrollIntoView({ block: 'center', behavior: "smooth" })
-});
+//animation on feature box
+const featureBox = document.querySelectorAll('.feature-box');
+let featrueDeg = 0;
+setInterval(() => {
+    featureBox.forEach(el => el.style.backgroundImage = `linear-gradient(${featrueDeg++}deg, rgb(255, 6, 255), black)`);
+}, 100);

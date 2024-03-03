@@ -47,14 +47,21 @@
             height: 4rem;
         }
     }
-    background-color: red;
 }
 
 .main-img{
-    width: 50rem;
+    width: 30rem;
     position: absolute;
-    right: 10rem;
-    top: 5rem;
+    right: 12rem;
+    top: 13rem;
    
     animation: main-img-anim 1.5s ease-in-out;
+
+    @include respond(phone){
+        right: 50%;
+        transform: translateX(50%);
+        top: 10rem;
+
+        animation: main-img-anim-phone 1.5s ease-in-out;
+    }
 }

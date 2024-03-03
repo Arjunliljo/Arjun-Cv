@@ -22,7 +22,7 @@ body{
 .primery-title{
     color: $color-gray-2;
     text-transform: uppercase;   
-    
+    text-wrap: nowrap;
     &--main{
         font-size: 6rem;
         display: block;
@@ -60,11 +60,11 @@ body{
     }
 }
 .heading-secondary{
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 700;
     display: inline-block;
     text-transform: uppercase;
-    background:linear-gradient(to right, $color-primery-light, $color-primery-dark); 
+    background:linear-gradient(to right, $color-primery-dark, $color-primery-light); 
     // cliping mask
     background-clip: text;
     color: transparent;

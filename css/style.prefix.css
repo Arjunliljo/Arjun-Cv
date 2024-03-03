@@ -15,12 +15,20 @@ break point choices
 @keyframes main-img-anim {
   0% {
     opacity: 0;
-    transform: translateX(300px); }
+    transform: translateY(30px); }
   60% {
     opacity: .6; }
   100% {
     opacity: 1;
-    transform: translateX(0px); } }
+    transform: translateY(0px); } }
+
+@keyframes main-img-anim-phone {
+  0% {
+    opacity: 0; }
+  60% {
+    opacity: .6; }
+  100% {
+    opacity: 1; } }
 
 @keyframes moveLeftoRight {
   0% {
@@ -107,7 +115,8 @@ body {
 
 .primery-title {
   color: #e1e1e1;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-wrap: nowrap; }
   .primery-title--main {
     font-size: 6rem;
     display: block;
@@ -143,11 +152,11 @@ body {
         margin-top: -3rem; } }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background: linear-gradient(to right, #1c1c1c, #660b15);
+  background: linear-gradient(to right, #660b15, #1c1c1c);
   background-clip: text;
   color: transparent;
   line-height: normal;
@@ -213,8 +222,7 @@ body {
   background-position: top;
   /* in these x and y axis contained area shuould be visible in the header */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative;
-  background-color: red; }
+  position: relative; }
   @media (min-resolution: 192dpi) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(28, 28, 28, 0.8), rgba(102, 11, 21, 0.8)), url("../img/header-background.png"); } }
@@ -236,11 +244,17 @@ body {
         height: 4rem; } }
 
 .main-img {
-  width: 50rem;
+  width: 30rem;
   position: absolute;
-  right: 10rem;
-  top: 5rem;
+  right: 12rem;
+  top: 13rem;
   animation: main-img-anim 1.5s ease-in-out; }
+  @media (max-width: 600px) {
+    .main-img {
+      right: 50%;
+      transform: translateX(50%);
+      top: 10rem;
+      animation: main-img-anim-phone 1.5s ease-in-out; } }
 
 .row {
   max-width: 114rem;
@@ -550,17 +564,31 @@ body {
 .feature-box {
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   border-radius: 2px;
   box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.15);
   cursor: pointer;
   text-wrap: nowrap;
-  transition: transform 0.4s; }
+  transition: transform 0.4s;
+  position: relative;
+  height: 39rem;
+  z-index: 100; }
+  .feature-box::before {
+    content: "";
+    height: 98%;
+    width: 96%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(2%, 1%);
+    background-color: black;
+    color: black;
+    z-index: -1; }
   @media (max-width: 900px) {
     .feature-box {
-      padding: 5rem; } }
+      padding: 5rem;
+      height: auto; } }
   @media (max-width: 900px) {
     .feature-box {
       font-size: 3rem; } }
@@ -706,7 +734,7 @@ body {
       left: 20%;
       transition: transform .2s; }
     .composition__photo:hover {
-      outline-color: #660b15;
+      outline-color: #720058;
       transform: scale(1.1) translateY(-0.5rem);
       box-shadow: 0px 1.5rem 2.5rem rgba(0, 0, 0, 0.6);
       z-index: 20; }
@@ -1052,12 +1080,13 @@ body {
   height: 2.8rem;
   width: 1rem;
   margin-bottom: .3rem;
-  background-color: yellow;
+  background-color: #e1e1e1;
   align-content: stretch;
-  animation: cursor-anim 1s ease-out 2s infinite; }
+  transition: opacity 1.2s;
+  animation: cursor-anim 1.2s ease-out 2s infinite; }
 
 .section-about {
-  background-color: black;
+  background-color: #e6e6e6;
   padding: 25rem 0;
   margin-top: -20vh; }
   @media (max-width: 900px) {
@@ -1068,7 +1097,7 @@ body {
 
 .section-features {
   padding: 18rem 0;
-  background-image: linear-gradient(to right bottom, rgba(28, 28, 28, 0.8), rgba(102, 11, 21, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(28, 28, 28, 0.8), rgba(0, 0, 0, 0.8)), url("https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-97395.jpg?t=st=1709482773~exp=1709486373~hmac=e13e6ec0d99fce76bf237fab325a80436fd2f6bbd6ea98f37bc37ccd46541f8f&w=900");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -20rem; }
