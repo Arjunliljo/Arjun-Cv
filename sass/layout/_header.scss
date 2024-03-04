@@ -51,10 +51,11 @@
 
 .main-img{
     width: 30rem;
+    height: 30rem;
     position: absolute;
     right: 12rem;
     top: 13rem;
-   
+   background-size: contain;
     animation: main-img-anim 1.5s ease-in-out;
 
     @include respond(phone){

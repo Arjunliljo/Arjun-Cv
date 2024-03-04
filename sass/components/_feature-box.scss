@@ -39,7 +39,7 @@
         font-size: 3rem;
     }
     &__icon{
-        font-size: 6rem;
+        height: 8rem;
         padding-bottom: .5rem;
         display: inline-block;
         background:linear-gradient(to right, $color-primery-light, $color-primery-dark);
@@ -47,7 +47,7 @@
         color: transparent;
 
         @include respond(tabPort){
-            font-size: 12rem;
+            width: 12rem;
         }
     }
     &__text{
@@ -64,3 +64,10 @@
     }
 }
 
+.js-logo{
+    width: 6.5rem;
+   
+}
+.svg{
+    text-shadow: 0rem 2rem 4rem rgba($color-gray, 1);
+}

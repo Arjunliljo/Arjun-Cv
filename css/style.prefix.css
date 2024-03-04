@@ -252,9 +252,11 @@ body {
 
 .main-img {
   width: 30rem;
+  height: 30rem;
   position: absolute;
   right: 12rem;
   top: 13rem;
+  background-size: contain;
   animation: main-img-anim 1.5s ease-in-out; }
   @media (max-width: 600px) {
     .main-img {
@@ -601,7 +603,7 @@ body {
     .feature-box {
       font-size: 3rem; } }
   .feature-box__icon {
-    font-size: 6rem;
+    height: 8rem;
     padding-bottom: .5rem;
     display: inline-block;
     background: linear-gradient(to right, #ff06ff, #610047);
@@ -609,12 +611,18 @@ body {
     color: transparent; }
     @media (max-width: 900px) {
       .feature-box__icon {
-        font-size: 12rem; } }
+        width: 12rem; } }
   .feature-box__text {
     text-wrap: balance;
     text-transform: none; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
+
+.js-logo {
+  width: 6.5rem; }
+
+.svg {
+  text-shadow: 0rem 2rem 4rem #777777; }
 
 .btn {
   backface-visibility: hidden;
