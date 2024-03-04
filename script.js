@@ -8,9 +8,11 @@ const sectionTours = document.querySelector('#section-tours');
 const subHeading = document.querySelector('.primery-title--sub');
 
 
+/////////////////////////////////////////////
+/////////// **** ANIMATIONS ****
+
 
 //cursor
-// const dev = ['D', 'E', 'V', 'E', 'L', 'O', 'P', 'E', 'R'];
 const devHtml = document.querySelector('.dev');
 const cursor = document.querySelector('.cursor');
 
@@ -50,9 +52,17 @@ function startAnimLeftToRight() {
 }
 startAnimLeftToRight();
 
+//About me
+const aboutMe = document.querySelectorAll('.heading-secondary');
+
+const body = document.querySelector('body');
+
+
 //animation on feature box
 const featureBox = document.querySelectorAll('.feature-box');
-let featrueDeg = 0;
+let deg = 0;
 setInterval(() => {
-    featureBox.forEach(el => el.style.backgroundImage = `linear-gradient(${featrueDeg++}deg, rgb(255, 6, 255), black)`);
+    featureBox.forEach(el => el.style.backgroundImage = `linear-gradient(${deg++}deg, rgb(255, 6, 255), black)`);
+    aboutMe.forEach(el => el.style.backgroundImage = `linear-gradient(${deg}deg,#610047, rgb(255, 6, 255)`);
+
 }, 100);

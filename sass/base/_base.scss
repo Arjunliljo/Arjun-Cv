@@ -24,6 +24,7 @@ html{
 body{
     padding: 3rem;
     box-sizing: border-box;
+   // background-color: black;
     @include respond(tabPort){
         padding: 0px;
     }

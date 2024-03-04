@@ -84,3 +84,12 @@
         opacity: 1;
     }
 }
+@keyframes bulb{
+
+    0%{
+        color: $color-primery-dark;
+    }
+    50%{
+        color: $color-primery-light;
+    }
+}

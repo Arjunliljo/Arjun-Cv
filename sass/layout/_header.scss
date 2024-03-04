@@ -2,13 +2,13 @@
     height: 90vh;
     width: 100%;
     background-image: linear-gradient(
-        to right bottom,rgba($color-primery-light, 0.8), 
-        rgba($color-primery-dark, 0.8)), 
+        to right bottom,rgba($color-black, .8), 
+        rgba($color-secondary-dark, 1)), 
         url('../img/header-background.png');
 
     @media (min-resolution:192dpi) {
         background-image: linear-gradient(
-            to right bottom,rgba($color-primery-light, 0.8), 
+            to right bottom,rgba($color-primery-dark, 1), 
             rgba($color-primery-dark, 0.8)), 
             url('../img/header-background.png');
     }

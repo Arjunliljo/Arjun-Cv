@@ -91,6 +91,8 @@
         border-bottom: 1px solid $color-primery-light;
         transition: all 0.3s;
 
+        animation: bulb 3s infinite;
+
         @include respond(tabPort){
             font-size: 2.5rem; 
         }
@@ -101,9 +103,11 @@
         box-shadow: 0rem 1rem 1.4rem rgba($color-black, .25);
         background-color: $color-primery-dark;
         color: $color-white;
+        animation: none;
     }
     &:active{
         transform: translateY(0);
         box-shadow: 0rem .5rem 1.8rem rgba($color-black, .1);
+        animation: none;
     }
 }

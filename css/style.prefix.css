@@ -64,6 +64,12 @@ break point choices
   100% {
     opacity: 1; } }
 
+@keyframes bulb {
+  0% {
+    color: #610047; }
+  50% {
+    color: #ff06ff; } }
+
 *,
 *::after,
 *::before {
@@ -114,7 +120,7 @@ body {
   backface-visibility: hidden; }
 
 .primery-title {
-  color: #e1e1e1;
+  color: #fbfcc5;
   text-transform: uppercase;
   text-wrap: nowrap; }
   .primery-title--main {
@@ -131,6 +137,7 @@ body {
         letter-spacing: 1rem;
         font-size: 10rem; } }
   .primery-title--sub {
+    color: #e1e1e1;
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -156,7 +163,7 @@ body {
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
-  background: linear-gradient(to right, #660b15, #1c1c1c);
+  background-image: linear-gradient(100deg, #030637, #ff06ff);
   background-clip: text;
   color: transparent;
   line-height: normal;
@@ -215,7 +222,7 @@ body {
 .header {
   height: 90vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, rgba(28, 28, 28, 0.8), rgba(102, 11, 21, 0.8)), url("../img/header-background.png");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), #3c0753), url("../img/header-background.png");
   /* always try to fit inside the box entirely*/
   background-size: cover;
   /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
@@ -225,7 +232,7 @@ body {
   position: relative; }
   @media (min-resolution: 192dpi) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(28, 28, 28, 0.8), rgba(102, 11, 21, 0.8)), url("../img/header-background.png"); } }
+      background-image: linear-gradient(to right bottom, #610047, rgba(97, 0, 71, 0.8)), url("../img/header-background.png"); } }
   @media (max-width: 600px) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
@@ -324,7 +331,7 @@ body {
     display: inline-block;
     transition: all 0.3s ease; }
   .footer__link:hover, .footer__link:active {
-    color: #1c1c1c;
+    color: #ff06ff;
     box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: scale(1.2) rotate(-5deg); }
   .footer__copyright {
@@ -355,7 +362,7 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .navigation__background {
-  background-image: radial-gradient(#00a2ff, #07077c, #0c496d);
+  background-image: radial-gradient(#5a027c, #07077c, #3C0753);
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -411,7 +418,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #660b15;
+  color: #610047;
   transform: translateX(1rem); }
   @media (max-width: 900px) {
     .navigation__link:hover, .navigation__link:active {
@@ -564,6 +571,7 @@ body {
 .feature-box {
   text-align: center;
   text-transform: uppercase;
+  background-image: linear-gradient(30deg, #ff06ff, black);
   font-size: 1.5rem;
   padding: 2.5rem;
   border-radius: 2px;
@@ -596,7 +604,7 @@ body {
     font-size: 6rem;
     padding-bottom: .5rem;
     display: inline-block;
-    background: linear-gradient(to right, #1c1c1c, #660b15);
+    background: linear-gradient(to right, #ff06ff, #610047);
     background-clip: text;
     color: transparent; }
     @media (max-width: 900px) {
@@ -623,10 +631,10 @@ body {
         margin-top: 5rem; } }
   .btn-blue {
     color: #fff;
-    background-color: #660b15;
+    background-color: #610047;
     font-size: 1.6rem; }
     .btn-blue::after {
-      background-color: #660b15; }
+      background-color: #610047; }
   .btn--animated {
     animation: btnMoveUp 1s ease-out 0.75s;
     /* animation will be applied to the button even before animation start due to delay */
@@ -668,13 +676,14 @@ body {
 
 .btn-learn-more:link, .btn-learn-more:visited {
   font-size: 1.6rem;
-  color: #660b15;
+  color: #610047;
   text-decoration: none;
   display: inline-block;
   padding-bottom: 3px;
   padding: .5rem;
-  border-bottom: 1px solid #1c1c1c;
-  transition: all 0.3s; }
+  border-bottom: 1px solid #ff06ff;
+  transition: all 0.3s;
+  animation: bulb 3s infinite; }
   @media (max-width: 900px) {
     .btn-learn-more:link, .btn-learn-more:visited {
       font-size: 2.5rem; } }
@@ -682,12 +691,14 @@ body {
 .btn-learn-more:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0rem 1rem 1.4rem rgba(0, 0, 0, 0.25);
-  background-color: #660b15;
-  color: #fff; }
+  background-color: #610047;
+  color: #fff;
+  animation: none; }
 
 .btn-learn-more:active {
   transform: translateY(0);
-  box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0rem 0.5rem 1.8rem rgba(0, 0, 0, 0.1);
+  animation: none; }
 
 .composition {
   position: relative;
@@ -769,11 +780,11 @@ body {
       transform: rotateY(180deg);
       margin: 0 auto; }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #1c1c1c); }
+        background-image: linear-gradient(to right bottom, #5a027c, #3C0753); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7edf6f, #28b485); }
+        background-image: linear-gradient(to right bottom, #fbfcc5, #28b485); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #1c1c1c, #660b15); }
+        background-image: linear-gradient(to right bottom, #ff06ff, #610047); }
   .card--text {
     text-transform: none; }
   .card:hover .card__side--front {
@@ -787,13 +798,13 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #1c1c1c), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #5a027c, #3C0753), url(../img/nat-5.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-4.jpg);
-      background-image: linear-gradient(to right bottom, #7edf6f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: url(../img/nat-3.jpg);
-      background-image: linear-gradient(to right bottom, #1c1c1c, #660b15), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #ff06ff, #610047), url(../img/nat-7.jpg); }
   .card__heading {
     text-align: right;
     text-transform: uppercase;
@@ -812,11 +823,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading--span-1 {
-      background-image: linear-gradient(to right, rgba(255, 185, 0, 0.8), rgba(28, 28, 28, 0.8)); }
+      background-image: linear-gradient(to right, rgba(90, 2, 124, 0.8), rgba(60, 7, 83, 0.8)); }
     .card__heading--span-2 {
-      background-image: linear-gradient(to right, rgba(126, 223, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+      background-image: linear-gradient(to right, rgba(251, 252, 197, 0.8), rgba(40, 180, 133, 0.8)); }
     .card__heading--span-3 {
-      background-image: linear-gradient(to right, rgba(28, 28, 28, 0.8), rgba(102, 11, 21, 0.8)); }
+      background-image: linear-gradient(to right, rgba(255, 6, 255, 0.8), rgba(97, 0, 71, 0.8)); }
   .card__details {
     width: 60%;
     margin: 0 auto;
@@ -995,9 +1006,9 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #7edf6f; }
+    border-bottom: 3px solid #fbfcc5; }
     .form__input:focus:invalid {
-      border-bottom: 3px solid #1c1c1c; }
+      border-bottom: 3px solid #3C0753; }
   .form__input::-webkit-input-placeholder {
     color: #e1e1e1; }
 
@@ -1038,7 +1049,7 @@ body {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 0.4rem solid #660b15;
+  border: 0.4rem solid #610047;
   display: inline-block;
   position: absolute;
   top: -.7rem;
@@ -1054,7 +1065,7 @@ body {
     display: block;
     height: 1.3rem;
     width: 1.3rem;
-    background-color: #660b15;
+    background-color: #610047;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -1086,7 +1097,7 @@ body {
   animation: cursor-anim 1.2s ease-out 2s infinite; }
 
 .section-about {
-  background-color: #e6e6e6;
+  background-color: #010320;
   padding: 25rem 0;
   margin-top: -20vh; }
   @media (max-width: 900px) {
@@ -1097,7 +1108,7 @@ body {
 
 .section-features {
   padding: 18rem 0;
-  background-image: linear-gradient(to right bottom, rgba(28, 28, 28, 0.8), rgba(0, 0, 0, 0.8)), url("https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-97395.jpg?t=st=1709482773~exp=1709486373~hmac=e13e6ec0d99fce76bf237fab325a80436fd2f6bbd6ea98f37bc37ccd46541f8f&w=900");
+  background-image: linear-gradient(to right bottom, rgba(3, 6, 55, 0.8), rgba(0, 0, 0, 0.8)), url("https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-97395.jpg?t=st=1709482773~exp=1709486373~hmac=e13e6ec0d99fce76bf237fab325a80436fd2f6bbd6ea98f37bc37ccd46541f8f&w=900");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -20rem; }
@@ -1123,7 +1134,7 @@ body {
 
 .section-book {
   padding: 15rem 15rem;
-  background-image: linear-gradient(to right, #1c1c1c, #660b15); }
+  background-image: linear-gradient(to right, #ff06ff, #610047); }
   @media (max-width: 900px) {
     .section-book {
       padding: 8rem; } }

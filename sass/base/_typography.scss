@@ -20,7 +20,7 @@ body{
 }
 
 .primery-title{
-    color: $color-gray-2;
+    color: $color-tertiary-light;
     text-transform: uppercase;   
     text-wrap: nowrap;
     &--main{
@@ -39,6 +39,7 @@ body{
         }
     }
     &--sub{
+        color: $color-gray-2;
         font-size: 3rem;
         @include flex();
         font-weight: 300;
@@ -64,7 +65,7 @@ body{
     font-weight: 700;
     display: inline-block;
     text-transform: uppercase;
-    background:linear-gradient(to right, $color-primery-dark, $color-primery-light); 
+    background-image:linear-gradient(100deg, $color-dark, $color-primery-light); 
     // cliping mask
     background-clip: text;
     color: transparent;
