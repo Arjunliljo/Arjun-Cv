@@ -66,17 +66,17 @@ break point choices
 
 @keyframes bulb {
   0% {
-    color: #610047;
-    fill: #610047; }
+    color: #610047; }
   50% {
-    color: #ff06ff;
-    fill: #ff06ff; } }
+    color: #ff06ff; } }
 
 @keyframes bulb-2 {
   0% {
-    fill: #910A67; }
+    fill: #910A67;
+    color: #777; }
   50% {
-    fill: #ff06ff; } }
+    fill: #ff06ff;
+    color: #e2e2e2; } }
 
 *,
 *::after,
@@ -145,7 +145,7 @@ body {
         letter-spacing: 1rem;
         font-size: 10rem; } }
   .primery-title--sub {
-    color: #e1e1e1;
+    color: #b8b8b8;
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -186,17 +186,19 @@ body {
       font-size: 5.5rem;
       margin-bottom: 0px; } }
 
-.heading-thertiary {
+.header-thertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation: bulb-2 7s linear infinite both; }
   @media (max-width: 900px) {
-    .heading-thertiary {
+    .header-thertiary {
       font-size: 3rem;
       text-align: center; } }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #a8a8a8; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
   @media (max-width: 900px) {
@@ -578,6 +580,9 @@ body {
       color: #bd0000;
       transform: scale(1.5); }
 
+.more-projects {
+  display: none; }
+
 .feature-box {
   text-align: center;
   text-transform: uppercase;
@@ -704,7 +709,7 @@ body {
   padding: .5rem;
   border-bottom: 1px solid #ff06ff;
   transition: all 0.3s;
-  animation: bulb 3s infinite; }
+  animation: bulb 7s infinite both; }
   @media (max-width: 900px) {
     .btn-learn-more:link, .btn-learn-more:visited {
       font-size: 2.5rem; } }
@@ -1031,7 +1036,7 @@ body {
     .form__input:focus:invalid {
       border-bottom: 3px solid #3C0753; }
   .form__input::-webkit-input-placeholder {
-    color: #e1e1e1; }
+    color: #b8b8b8; }
 
 .form__label {
   margin-left: 2rem;
@@ -1112,7 +1117,7 @@ body {
   height: 2.8rem;
   width: 1rem;
   margin-bottom: .3rem;
-  background-color: #e1e1e1;
+  background-color: #b8b8b8;
   align-content: stretch;
   transition: opacity 1.2s;
   animation: cursor-anim 1.2s ease-out 2s infinite; }
@@ -1146,6 +1151,8 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
+  background-image: linear-gradient(to right bottom, rgba(3, 6, 55, 0.8), rgba(0, 0, 0, 0.8)), url("../img/section-tours-background-2.png");
+  background-size: cover;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
 

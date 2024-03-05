@@ -91,7 +91,7 @@
         border-bottom: 1px solid $color-primery-light;
         transition: all 0.3s;
 
-        animation: bulb 3s infinite;
+        animation: bulb 7s infinite both;
 
         @include respond(tabPort){
             font-size: 2.5rem; 

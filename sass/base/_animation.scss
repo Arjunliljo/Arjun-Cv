@@ -88,19 +88,19 @@
 
     0%{
         color: $color-primery-dark;
-        fill: $color-primery-dark;
     }
     50%{
         color: $color-primery-light;
-        fill: $color-primery-light;
     }
 }
 @keyframes bulb-2{
 
     0%{
         fill: $color-primery-mid;
+        color: #777;
     }
     50%{
         fill: $color-primery-light;
+        color: rgb(226, 226, 226);
     }
 }

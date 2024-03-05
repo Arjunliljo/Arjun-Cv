@@ -66,3 +66,21 @@ setInterval(() => {
     aboutMe.forEach(el => el.style.backgroundImage = `linear-gradient(${deg}deg,#610047, rgb(255, 6, 255)`);
 
 }, 100);
+
+
+///////////////////////
+//////Projects 
+
+const moreProjectsBtn = document.querySelector('.more-btn');
+const moreProjects = document.getElementById('more-projects');
+
+console.log(moreProjects);
+
+moreProjectsBtn.addEventListener('click', () => {
+
+    if (moreProjectsBtn.innerHTML === 'Show less') moreProjectsBtn.innerHTML = 'More';
+
+    else moreProjectsBtn.innerHTML = 'Show less';
+
+    moreProjects.classList.toggle('more-projects');
+})

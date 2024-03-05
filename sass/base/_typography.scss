@@ -85,11 +85,13 @@ body{
         margin-bottom: 0px;
     }
 }
-.heading-thertiary{
+.header-thertiary{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
-
+  
+    animation: bulb-2 7s linear infinite both;
+  
     @include respond(tabPort){
         font-size: 3rem;
         text-align: center;
@@ -97,6 +99,7 @@ body{
 }
 .paragraph{
     font-size: $default-font-size;
+    color: #a8a8a8;
     &:not(:last-child){
         margin-bottom: 3rem;
     }
