@@ -240,9 +240,6 @@ body {
   /* in these x and y axis contained area shuould be visible in the header */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  @media (min-resolution: 192dpi) {
-    .header {
-      background-image: linear-gradient(to right bottom, #610047, rgba(97, 0, 71, 0.8)), url("../img/header-background.png"); } }
   @media (max-width: 600px) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
