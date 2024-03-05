@@ -46,6 +46,8 @@
         background-clip: text;
         color: transparent;
 
+        animation: bulb-2 7s linear infinite both;
+
         @include respond(tabPort){
             width: 12rem;
         }
@@ -64,10 +66,14 @@
     }
 }
 
-.js-logo{
-    width: 6.5rem;
-   
+.icon-anim{
+    fill: $color-primery-mid;
+    animation: bulb-2 7s linear infinite both;
 }
-.svg{
-    text-shadow: 0rem 2rem 4rem rgba($color-gray, 1);
+
+.node,
+.react{
+    height: 7rem;
+    width: 7rem;
+    margin: .5rem 0;
 }

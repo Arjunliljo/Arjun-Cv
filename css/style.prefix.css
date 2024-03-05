@@ -66,9 +66,17 @@ break point choices
 
 @keyframes bulb {
   0% {
-    color: #610047; }
+    color: #610047;
+    fill: #610047; }
   50% {
-    color: #ff06ff; } }
+    color: #ff06ff;
+    fill: #ff06ff; } }
+
+@keyframes bulb-2 {
+  0% {
+    fill: #910A67; }
+  50% {
+    fill: #ff06ff; } }
 
 *,
 *::after,
@@ -608,7 +616,8 @@ body {
     display: inline-block;
     background: linear-gradient(to right, #ff06ff, #610047);
     background-clip: text;
-    color: transparent; }
+    color: transparent;
+    animation: bulb-2 7s linear infinite both; }
     @media (max-width: 900px) {
       .feature-box__icon {
         width: 12rem; } }
@@ -618,11 +627,15 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
 
-.js-logo {
-  width: 6.5rem; }
+.icon-anim {
+  fill: #910A67;
+  animation: bulb-2 7s linear infinite both; }
 
-.svg {
-  text-shadow: 0rem 2rem 4rem #777777; }
+.node,
+.react {
+  height: 7rem;
+  width: 7rem;
+  margin: .5rem 0; }
 
 .btn {
   backface-visibility: hidden;
@@ -1105,7 +1118,7 @@ body {
   animation: cursor-anim 1.2s ease-out 2s infinite; }
 
 .section-about {
-  background-color: #010320;
+  background-color: #141530;
   padding: 25rem 0;
   margin-top: -20vh; }
   @media (max-width: 900px) {
