@@ -32,7 +32,7 @@
         transition: transform 1s ease;
 
         &--front{
-            background-color: $color-white;
+            background-color: $color-darker;
         }
         &--back{
             background-color: rgb(47, 0, 255);
@@ -70,7 +70,7 @@
     &__picture{
         background-size: cover;
         height: 25rem;
-        background-blend-mode: screen;
+        background-blend-mode: multiply;
 
         // to make work in all browser
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);

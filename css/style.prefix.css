@@ -797,13 +797,13 @@ body {
     box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
     transition: transform 1s ease; }
     .card__side--front {
-      background-color: #fff; }
+      background-color: #141530; }
     .card__side--back {
       background-color: #2f00ff;
       transform: rotateY(180deg);
       margin: 0 auto; }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #5a027c, #3C0753); }
+        background-image: linear-gradient(to right bottom, #0059ff, #3C0753); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #fbfcc5, #28b485); }
       .card__side--back-3 {
@@ -817,11 +817,11 @@ body {
   .card__picture {
     background-size: cover;
     height: 25rem;
-    background-blend-mode: screen;
+    background-blend-mode: multiply;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #5a027c, #3C0753), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #0059ff, #3C0753), url(../img/nat-5.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-4.jpg);
       background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(../img/nat-6.jpg); }
@@ -846,7 +846,7 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading--span-1 {
-      background-image: linear-gradient(to right, rgba(90, 2, 124, 0.8), rgba(60, 7, 83, 0.8)); }
+      background-image: linear-gradient(to right, rgba(0, 89, 255, 0.8), rgba(60, 7, 83, 0.8)); }
     .card__heading--span-2 {
       background-image: linear-gradient(to right, rgba(251, 252, 197, 0.8), rgba(40, 180, 133, 0.8)); }
     .card__heading--span-3 {
