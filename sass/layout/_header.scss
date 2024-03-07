@@ -40,6 +40,34 @@
             height: 4rem;
         }
     }
+
+    &__social{
+
+        text-decoration: none;
+        list-style: none;
+
+        &-icon{
+            position: absolute;
+            right: 25rem;
+            top: 25rem;
+            z-index: 200;
+            width: 4rem;
+            height: 4rem;
+            fill: white;
+            cursor: pointer;
+            
+            backface-visibility: hidden;
+
+            transition: transform .2s;
+
+            &-outside{
+                fill: rgb(255, 255, 255) !important;
+            }
+            &-inside{
+                fill: rgb(0, 0, 0) !important;
+            }
+        }
+    }
 }
 
 .main-img{
@@ -48,7 +76,7 @@
     position: absolute;
     right: 12rem;
     top: 13rem;
-   background-size: contain;
+    background-size: contain;
     animation: main-img-anim 1.5s ease-in-out;
 
     @include respond(phone){
@@ -57,5 +85,39 @@
         top: 10rem;
 
         animation: main-img-anim-phone 1.5s ease-in-out;
+    }
+}
+
+.git-hub{
+    transform: translate(10rem, -10rem);
+    animation: social-anim 3s ease-out, social-anim-gitHub 3s ease-out .5s;
+
+    &:hover{
+        transform:translate(10rem, -10rem) scale(1.5);;
+    }
+}
+.linked-in{
+    
+    &-outside{
+        fill: rgb(255, 255, 255) !important;
+    }
+    &-inside{
+        fill: rgb(0, 0, 0) !important;
+    }
+    
+    transform: translate(14rem, -2rem);
+    animation: social-anim 3s ease-out, social-anim-linkedIn 3s ease-out .5s;
+
+    &:hover{
+        transform: translate(14rem, -2rem) scale(1.5);
+    }
+    
+}
+.instagram{
+    transform: translate(12.5rem, 7rem);
+    animation: social-anim 3s ease-out, social-anim-instagram 3s ease-out .5s;
+
+    &:hover{
+        transform:translate(12.5rem, 7rem) scale(1.5);
     }
 }

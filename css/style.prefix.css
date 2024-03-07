@@ -78,6 +78,32 @@ break point choices
     fill: #ff06ff;
     color: #e2e2e2; } }
 
+@keyframes social-anim {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes social-anim-gitHub {
+  0% {
+    transform: translate(0rem, 0rem); }
+  100% {
+    transform: translate(10rem, -10rem); } }
+
+@keyframes social-anim-linkedIn {
+  0% {
+    transform: translate(0rem, 0rem); }
+  100% {
+    transform: translate(14rem, -2rem); } }
+
+@keyframes social-anim-instagram {
+  0% {
+    transform: translate(0rem, 0rem); }
+  100% {
+    transform: translate(12.5rem, 7rem); } }
+
 *,
 *::after,
 *::before {
@@ -256,6 +282,24 @@ body {
     @media (max-width: 600px) {
       .header__logo {
         height: 4rem; } }
+  .header__social {
+    text-decoration: none;
+    list-style: none; }
+    .header__social-icon {
+      position: absolute;
+      right: 25rem;
+      top: 25rem;
+      z-index: 200;
+      width: 4rem;
+      height: 4rem;
+      fill: white;
+      cursor: pointer;
+      backface-visibility: hidden;
+      transition: transform .2s; }
+      .header__social-icon-outside {
+        fill: white !important; }
+      .header__social-icon-inside {
+        fill: black !important; }
 
 .main-img {
   width: 30rem;
@@ -271,6 +315,28 @@ body {
       transform: translateX(50%);
       top: 10rem;
       animation: main-img-anim-phone 1.5s ease-in-out; } }
+
+.git-hub {
+  transform: translate(10rem, -10rem);
+  animation: social-anim 3s ease-out, social-anim-gitHub 3s ease-out .5s; }
+  .git-hub:hover {
+    transform: translate(10rem, -10rem) scale(1.5); }
+
+.linked-in {
+  transform: translate(14rem, -2rem);
+  animation: social-anim 3s ease-out, social-anim-linkedIn 3s ease-out .5s; }
+  .linked-in-outside {
+    fill: white !important; }
+  .linked-in-inside {
+    fill: black !important; }
+  .linked-in:hover {
+    transform: translate(14rem, -2rem) scale(1.5); }
+
+.instagram {
+  transform: translate(12.5rem, 7rem);
+  animation: social-anim 3s ease-out, social-anim-instagram 3s ease-out .5s; }
+  .instagram:hover {
+    transform: translate(12.5rem, 7rem) scale(1.5); }
 
 .row {
   max-width: 114rem;
@@ -827,7 +893,7 @@ body {
       background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: url(../img/nat-3.jpg);
-      background-image: linear-gradient(to right bottom, #ff06ff, #610047), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #ff06ff, #610047), url(../img/The-Pig-game.jpg); }
   .card__heading {
     text-align: right;
     text-transform: uppercase;

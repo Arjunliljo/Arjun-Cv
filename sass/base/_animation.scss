@@ -104,3 +104,42 @@
         color: rgb(226, 226, 226);
     }
 }
+@keyframes social-anim{
+
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes social-anim-gitHub{
+
+    0%{
+        transform: translate(0rem, 0rem);
+    }
+    100%{
+        transform: translate(10rem, -10rem);
+    }
+}
+@keyframes social-anim-linkedIn{
+
+    0%{
+        transform: translate(0rem, 0rem);
+    }
+    100%{
+        transform: translate(14rem, -2rem);
+    }
+}
+@keyframes social-anim-instagram{
+
+    0%{
+        transform: translate(0rem, 0rem);
+    }
+    100%{
+        transform: translate(12.5rem, 7rem);
+    }
+}
