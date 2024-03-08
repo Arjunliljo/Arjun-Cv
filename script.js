@@ -20,7 +20,7 @@ const contactBtn = document.querySelector('.header__contact-now');
 
 setTimeout(() => {
     contactBtn.style.visibility = 'visible';
-}, 4000);
+}, 2500);
 
 //cursor
 const devHtml = document.querySelector('.dev');
