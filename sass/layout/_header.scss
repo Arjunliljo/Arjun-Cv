@@ -53,18 +53,26 @@
             z-index: 200;
             width: 4rem;
             height: 4rem;
-            fill: white;
+            fill: gray;
+            color: gray;
             cursor: pointer;
-            
             backface-visibility: hidden;
 
             transition: transform .2s;
 
             &-outside{
-                fill: rgb(255, 255, 255) !important;
+                fill: currentColor !important;
+
+                &:hover{
+                    fill: rgb(192, 192, 192) !important;
+                }
             }
             &-inside{
                 fill: rgb(0, 0, 0) !important;
+            }
+
+            &:hover{
+                fill: rgb(192, 192, 192) !important;
             }
         }
     }
@@ -93,23 +101,25 @@
     animation: social-anim 3s ease-out, social-anim-gitHub 3s ease-out .5s;
 
     &:hover{
-        transform:translate(10rem, -10rem) scale(1.5);;
+        transform:translate(10rem, -10rem) scale(1.5);
+        fill: rgb(192, 192, 192);
     }
 }
 .linked-in{
     
-    &-outside{
-        fill: rgb(255, 255, 255) !important;
-    }
-    &-inside{
-        fill: rgb(0, 0, 0) !important;
-    }
+    // &-outside{
+    //     fill: rgb(255, 255, 255) !important;
+    // }
+    // &-inside{
+    //     fill: rgb(0, 0, 0) !important;
+    // }
     
     transform: translate(14rem, -2rem);
     animation: social-anim 3s ease-out, social-anim-linkedIn 3s ease-out .5s;
 
     &:hover{
         transform: translate(14rem, -2rem) scale(1.5);
+        fill: rgb(192, 192, 192);
     }
     
 }
@@ -119,5 +129,6 @@
 
     &:hover{
         transform:translate(12.5rem, 7rem) scale(1.5);
+        fill: rgb(192, 192, 192);
     }
 }

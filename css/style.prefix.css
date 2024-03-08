@@ -292,14 +292,19 @@ body {
       z-index: 200;
       width: 4rem;
       height: 4rem;
-      fill: white;
+      fill: gray;
+      color: gray;
       cursor: pointer;
       backface-visibility: hidden;
       transition: transform .2s; }
       .header__social-icon-outside {
-        fill: white !important; }
+        fill: currentColor !important; }
+        .header__social-icon-outside:hover {
+          fill: silver !important; }
       .header__social-icon-inside {
         fill: black !important; }
+      .header__social-icon:hover {
+        fill: silver !important; }
 
 .main-img {
   width: 30rem;
@@ -320,23 +325,22 @@ body {
   transform: translate(10rem, -10rem);
   animation: social-anim 3s ease-out, social-anim-gitHub 3s ease-out .5s; }
   .git-hub:hover {
-    transform: translate(10rem, -10rem) scale(1.5); }
+    transform: translate(10rem, -10rem) scale(1.5);
+    fill: silver; }
 
 .linked-in {
   transform: translate(14rem, -2rem);
   animation: social-anim 3s ease-out, social-anim-linkedIn 3s ease-out .5s; }
-  .linked-in-outside {
-    fill: white !important; }
-  .linked-in-inside {
-    fill: black !important; }
   .linked-in:hover {
-    transform: translate(14rem, -2rem) scale(1.5); }
+    transform: translate(14rem, -2rem) scale(1.5);
+    fill: silver; }
 
 .instagram {
   transform: translate(12.5rem, 7rem);
   animation: social-anim 3s ease-out, social-anim-instagram 3s ease-out .5s; }
   .instagram:hover {
-    transform: translate(12.5rem, 7rem) scale(1.5); }
+    transform: translate(12.5rem, 7rem) scale(1.5);
+    fill: silver; }
 
 .row {
   max-width: 114rem;
