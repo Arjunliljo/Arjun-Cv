@@ -362,6 +362,7 @@ body {
         padding: 0;
         width: 100%;
         bottom: 0px;
+        transition: none;
         transform: rotate(0deg);
         top: 75vh;
         left: 0;
