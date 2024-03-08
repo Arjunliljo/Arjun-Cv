@@ -327,7 +327,7 @@ body {
           width: 6rem;
           height: 6rem;
           left: auto;
-          right: 34.5rem;
+          right: 35%;
           bottom: 10rem; } }
       .header__social-icon-outside {
         fill: currentColor !important; }
@@ -380,6 +380,9 @@ body {
   .git-hub:hover {
     transform: translate(10rem, -10rem) scale(1.5);
     fill: silver; }
+    @media (max-width: 900px) {
+      .git-hub:hover {
+        transform: translate(-20rem, -25rem); } }
   @media (max-width: 900px) {
     .git-hub {
       transform: translate(-20rem, -25rem);
@@ -391,6 +394,9 @@ body {
   .linked-in:hover {
     transform: translate(14rem, -2rem) scale(1.5);
     fill: silver; }
+    @media (max-width: 900px) {
+      .linked-in:hover {
+        transform: translate(-10rem, -25rem); } }
   @media (max-width: 900px) {
     .linked-in {
       transform: translate(-10rem, -25rem);
@@ -402,6 +408,9 @@ body {
   .instagram:hover {
     transform: translate(12.5rem, 7rem) scale(1.5);
     fill: silver; }
+    @media (max-width: 900px) {
+      .instagram:hover {
+        transform: translate(0rem, -25rem); } }
   @media (max-width: 900px) {
     .instagram {
       transform: translate(0rem, -25rem);
