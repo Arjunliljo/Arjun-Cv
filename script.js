@@ -11,6 +11,16 @@ const subHeading = document.querySelector('.primery-title--sub');
 /////////////////////////////////////////////
 /////////// **** ANIMATIONS ****
 
+/////////////////////////
+/////////// Header
+
+//contact-now
+
+const contactBtn = document.querySelector('.header__contact-now');
+
+setTimeout(() => {
+    contactBtn.style.visibility = 'visible';
+}, 4000);
 
 //cursor
 const devHtml = document.querySelector('.dev');

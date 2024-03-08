@@ -143,3 +143,42 @@
         transform: translate(12.5rem, 7rem);
     }
 }
+
+@keyframes contact-anim{
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+;
+@keyframes git-anim-phone{
+
+    0%{
+        transform: translate(-20rem, 25rem);
+    }
+    100%{
+        transform: translate(-20rem, -25rem);
+    }
+}
+@keyframes linkedIn-anim-phone{
+
+    0%{
+        transform: translate(-10rem, 25rem);
+    }
+    100%{
+        transform: translate(-10rem, -25rem);
+    }
+}
+@keyframes insta-anim-phone{
+
+    0%{
+        transform: translate(0rem, 25rem);
+    }
+    100%{
+        transform: translate(0rem, -25rem);
+    }
+}

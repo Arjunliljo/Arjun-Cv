@@ -48,7 +48,7 @@
 
         &-icon{
             position: absolute;
-            right: 25rem;
+            right: 28rem;
             top: 25rem;
             z-index: 200;
             width: 4rem;
@@ -57,6 +57,15 @@
             color: gray;
             cursor: pointer;
             backface-visibility: hidden;
+
+            @include respond(tabPort){
+                top: auto;
+                width: 6rem;
+                height: 6rem;
+                left: auto;
+                right: 34.5rem;
+                bottom: 10rem;
+            }
 
             transition: transform .2s;
 
@@ -76,13 +85,39 @@
             }
         }
     }
+
+    &__contact-now{
+        position: absolute;
+        right: -9rem;
+        top: -3rem;
+        padding: 1rem 10rem;
+        transition: transform .5s;
+        transform: rotate(40deg);
+        background-color: $color-secondary-mid;
+        transform-origin: left;
+        animation: contact-anim .3s linear;
+        animation-delay: 4s;
+        visibility: hidden;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: $color-tertiary-light;
+        letter-spacing: .5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        border: none;
+
+
+        &:hover{
+            opacity: .8;
+        }
+    }
 }
 
 .main-img{
     width: 30rem;
     height: 30rem;
     position: absolute;
-    right: 12rem;
+    right: 15rem;
     top: 13rem;
     background-size: contain;
     animation: main-img-anim 1.5s ease-in-out;
@@ -98,11 +133,15 @@
 
 .git-hub{
     transform: translate(10rem, -10rem);
-    animation: social-anim 3s ease-out, social-anim-gitHub 3s ease-out .5s;
+    animation: social-anim $icon-anim-time ease-in, social-anim-gitHub$icon-anim-time ease-in .5s;
 
     &:hover{
         transform:translate(10rem, -10rem) scale(1.5);
         fill: rgb(192, 192, 192);
+    }
+    @include respond(tabPort){
+        transform: translate(-20rem, -25rem);
+        animation: git-anim-phone 2s ease;
     }
 }
 .linked-in{
@@ -115,20 +154,29 @@
     // }
     
     transform: translate(14rem, -2rem);
-    animation: social-anim 3s ease-out, social-anim-linkedIn 3s ease-out .5s;
+    animation: social-anim $icon-anim-time ease-in, social-anim-linkedIn $icon-anim-time ease-in .5s;
 
     &:hover{
         transform: translate(14rem, -2rem) scale(1.5);
         fill: rgb(192, 192, 192);
     }
-    
+
+    @include respond(tabPort){
+        transform: translate(-10rem, -25rem);
+        animation: linkedIn-anim-phone 3s cubic-bezier(.6,-0.02,.79,.5);
+    }
+  
 }
 .instagram{
     transform: translate(12.5rem, 7rem);
-    animation: social-anim 3s ease-out, social-anim-instagram 3s ease-out .5s;
+    animation: social-anim $icon-anim-time ease-in, social-anim-instagram $icon-anim-time ease-in .5s;
 
     &:hover{
         transform:translate(12.5rem, 7rem) scale(1.5);
         fill: rgb(192, 192, 192);
+    }
+    @include respond(tabPort){
+        transform: translate(0rem, -25rem);
+        animation: insta-anim-phone 4s cubic-bezier(1,-0.01,.79,.5);
     }
 }
