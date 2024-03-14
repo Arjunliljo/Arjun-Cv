@@ -72,7 +72,7 @@ break point choices
 
 @keyframes bulb-2 {
   0% {
-    fill: #910A67;
+    fill: #a91079;
     color: #777; }
   50% {
     fill: #ff06ff;
@@ -282,7 +282,7 @@ body {
 .header {
   height: 90vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), #3c0753), url("../img/header-background.png");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), #2e0249), url("../img/header-background.png");
   /* always try to fit inside the box entirely*/
   background-size: cover;
   /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
@@ -344,7 +344,7 @@ body {
     padding: 1rem 10rem;
     transition: transform .5s;
     transform: rotate(40deg);
-    background-color: #005e94;
+    background-color: #2600ff;
     transform-origin: left;
     animation: contact-anim .3s linear;
     animation-delay: 2.5s;
@@ -789,7 +789,7 @@ body {
     transform: translateY(-1.5rem) scale(1.05); }
 
 .icon-anim {
-  fill: #910A67;
+  fill: #a91079;
   animation: bulb-2 7s linear infinite both; }
 
 .node,
@@ -962,7 +962,7 @@ body {
       transform: rotateY(180deg);
       margin: 0 auto; }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #0059ff, #3C0753); }
+        background-image: linear-gradient(to right bottom, #0059ff, #2e0249); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #fbfcc5, #28b485); }
       .card__side--back-3 {
@@ -980,7 +980,7 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #0059ff, #3C0753), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #0059ff, #2e0249), url(../img/nat-5.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-4.jpg);
       background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(../img/nat-6.jpg); }
@@ -1005,7 +1005,7 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading--span-1 {
-      background-image: linear-gradient(to right, rgba(0, 89, 255, 0.8), rgba(60, 7, 83, 0.8)); }
+      background-image: linear-gradient(to right, rgba(0, 89, 255, 0.8), rgba(46, 2, 73, 0.8)); }
     .card__heading--span-2 {
       background-image: linear-gradient(to right, rgba(251, 252, 197, 0.8), rgba(40, 180, 133, 0.8)); }
     .card__heading--span-3 {
@@ -1087,8 +1087,8 @@ body {
 .story {
   margin: 0 auto;
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3rem 6rem rgba(255, 6, 255, 0.3);
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.6rem;
@@ -1160,114 +1160,140 @@ body {
   height: 100%;
   z-index: -1;
   width: 100%;
+  background-image: linear-gradient(#2e0249, 0.8, #141530, 0.8);
   overflow: hidden; }
   .bg__video-content {
-    opacity: 0.2;
-    object-fit: cover;
+    opacity: 1;
+    object-fit: fill;
+    background-repeat: repeat;
     width: 100%;
     height: 100%; }
 
-.form__group:not(:last-child) {
-  margin-bottom: 0rem; }
-
-.form__input {
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
-  font-family: inherit;
-  color: inherit;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  display: block;
-  width: 90%;
-  transition: all .3s; }
-  @media (max-width: 900px) {
-    .form__input {
-      font-size: 3rem;
-      width: 100%; } }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #fbfcc5; }
-    .form__input:focus:invalid {
-      border-bottom: 3px solid #3C0753; }
-  .form__input::-webkit-input-placeholder {
-    color: #b8b8b8; }
-
-.form__label {
-  margin-left: 2rem;
-  margin-top: 1rem;
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 700;
-  transition: all .3s; }
-  @media (max-width: 900px) {
-    .form__label {
-      font-size: 1.8rem;
-      margin-bottom: 2rem; } }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-3rem); }
-
-.form__radio-group {
-  display: inline-block;
-  width: 30%; }
-  @media (max-width: 900px) {
-    .form__radio-group {
-      width: 40%; } }
-
-.form__radio-label {
-  position: relative;
-  cursor: pointer;
-  font-size: 1.6rem;
-  padding-left: 4rem; }
-  @media (max-width: 900px) {
-    .form__radio-label {
-      font-size: 3rem; } }
-
-.form__radio-button {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  border: 0.4rem solid #610047;
-  display: inline-block;
-  position: absolute;
-  top: -.7rem;
-  left: 0; }
-  @media (max-width: 900px) {
-    .form__radio-button {
-      top: -.4rem;
-      height: 4rem;
-      width: 4rem;
-      left: -1rem; } }
-  .form__radio-button::after {
-    content: "";
+.form {
+  position: relative; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__textArea {
+    margin-bottom: 2rem;
+    height: 30rem;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    font-family: inherit;
+    color: inherit;
+    background-color: rgba(46, 2, 73, 0.1);
+    border: none;
+    border-bottom: 3px solid transparent;
     display: block;
-    height: 1.3rem;
-    width: 1.3rem;
-    background-color: #610047;
-    border-radius: 50%;
+    width: 90%;
+    transition: all .3s;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity .3s; }
+    right: -125%;
+    top: 0%; }
+    .form__textArea:focus {
+      outline: none; }
     @media (max-width: 900px) {
-      .form__radio-button::after {
-        height: 2rem;
-        width: 2rem; } }
-
-.form__radio-input {
-  opacity: 0; }
-
-.form__radio-input:checked + .form__radio-label .form__radio-button::after {
-  opacity: 1; }
+      .form__textArea {
+        position: static;
+        width: 100%;
+        background-color: white;
+        font-size: 3rem; } }
+  .form__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    font-family: inherit;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+    width: 90%;
+    transition: all .3s; }
+    @media (max-width: 900px) {
+      .form__input {
+        font-size: 3rem;
+        width: 100%; } }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #fbfcc5; }
+      .form__input:focus:invalid {
+        border-bottom: 3px solid #2e0249; }
+    .form__input::-webkit-input-placeholder {
+      color: #777; }
+  .form__label {
+    margin-left: 2rem;
+    margin-top: .5rem;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all .3s; }
+    @media (max-width: 900px) {
+      .form__label {
+        font-size: 1.8rem;
+        margin-bottom: 2rem; } }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3rem); }
+  .form__radio-group {
+    display: inline-block;
+    width: 30%; }
+    @media (max-width: 900px) {
+      .form__radio-group {
+        width: 40%; } }
+  .form__radio-label {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding-left: 4rem; }
+    @media (max-width: 900px) {
+      .form__radio-label {
+        font-size: 3rem; } }
+  .form__radio-button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.4rem solid #ff06ff;
+    display: inline-block;
+    position: absolute;
+    top: -.7rem;
+    left: 0; }
+    @media (max-width: 900px) {
+      .form__radio-button {
+        top: -.4rem;
+        height: 4rem;
+        width: 4rem;
+        left: -1rem; } }
+    .form__radio-button::after {
+      content: "";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      background-color: #ff06ff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity .3s; }
+      @media (max-width: 900px) {
+        .form__radio-button::after {
+          height: 2rem;
+          width: 2rem; } }
+  .form__radio-input {
+    opacity: 0; }
+  .form__radio-input:checked + .form__radio-label .form__radio-button::after {
+    opacity: 1; }
 
 .book {
   box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.3); }
+
+.share-thought-btn {
+  transform: translateX(160%); }
+  @media (max-width: 900px) {
+    .share-thought-btn {
+      transform: translateX(0%); } }
 
 .cursor {
   height: 2.8rem;
@@ -1313,19 +1339,30 @@ body {
   margin-top: -10rem; }
 
 .section-stories {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  width: 100%;
+  margin-top: -18rem;
   padding: 10rem 0 10rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative; }
+  @media (max-width: 900px) {
+    .section-stories {
+      clip-path: none;
+      margin-top: 0%; } }
 
 .section-book {
   padding: 15rem 15rem;
-  background-image: linear-gradient(to right, #ff06ff, #610047); }
+  background-color: #a91079;
+  margin-top: -1rem; }
   @media (max-width: 900px) {
     .section-book {
       padding: 8rem; } }
+  .section-book .heading-secondary {
+    color: #fff; }
 
 .book {
   height: 50rem;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(90deg, #2e0249 50%, #f7f7f7 50%);
   background-size: cover; }
   @media (max-width: 900px) {
     .book {

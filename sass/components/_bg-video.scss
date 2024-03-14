@@ -6,10 +6,13 @@
      height: 100%;
      z-index: -1;
      width: 100%;
+     background-image: linear-gradient(($color-secondary-dark, 0.8), ($color-darker, 0.8));
      overflow: hidden;
+
      &-content{
-        opacity: 0.2;
-        object-fit: cover;
+        opacity: 1;
+        object-fit: fill;
+        background-repeat: repeat;
         width: 100%;
         height: 100%;
      }
