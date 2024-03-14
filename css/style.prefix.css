@@ -282,7 +282,7 @@ body {
 .header {
   height: 90vh;
   width: 100%;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), #2e0249), url("../img/header-background.png");
+  background-image: linear-gradient(to right bottom, black, #2e0249);
   /* always try to fit inside the box entirely*/
   background-size: cover;
   /* top position of the image remains stable while bottom will be croped while adjustiing the screen size because of box-sizing  */
@@ -346,9 +346,9 @@ body {
     transform: rotate(40deg);
     background-color: #322486;
     transform-origin: left;
+    opacity: 0;
     animation: contact-anim .3s linear;
-    animation-delay: 2.5s;
-    visibility: hidden;
+    animation-delay: 3s;
     cursor: pointer;
     text-transform: uppercase;
     color: #fbfcc5;
@@ -372,7 +372,7 @@ body {
         z-index: 1000;
         font-size: 4rem; } }
     .header__contact-now:hover {
-      opacity: .8; }
+      background-color: rgba(50, 36, 134, 0.8); }
 
 .main-img {
   width: 30rem;

@@ -2,9 +2,9 @@
     height: 90vh;
     width: 100%;
     background-image: linear-gradient(
-        to right bottom,rgba($color-black, .8), 
+        to right bottom,rgba($color-black, 1), 
         rgba($color-secondary-dark, 1)), 
-        url('../img/header-background.png');
+        ;
 
     /* always try to fit inside the box entirely*/
     background-size: cover;
@@ -95,9 +95,9 @@
         transform: rotate(40deg);
         background-color: $color-secondary-mid;
         transform-origin: left;
+        opacity: 0;
         animation: contact-anim .3s linear;
-        animation-delay: 2.5s;
-        visibility: hidden;
+        animation-delay: 3s;
         cursor: pointer;
         text-transform: uppercase;
         color: $color-tertiary-light;
@@ -123,7 +123,7 @@
         }
 
         &:hover{
-            opacity: .8;
+            background-color: rgba($color-secondary-mid, .8);
         }
     }
 }

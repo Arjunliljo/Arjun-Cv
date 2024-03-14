@@ -15,12 +15,12 @@ const subHeading = document.querySelector('.primery-title--sub');
 /////////// Header
 
 //contact-now
-
 const contactBtn = document.querySelector('.header__contact-now');
 
 setTimeout(() => {
-    contactBtn.style.visibility = 'visible';
-}, 2500);
+    contactBtn.style.opacity = 1;
+}, 3000);
+
 
 //cursor
 const devHtml = document.querySelector('.dev');
@@ -64,7 +64,6 @@ startAnimLeftToRight();
 
 //About me
 const aboutMe = document.querySelectorAll('.heading-secondary');
-
 const body = document.querySelector('body');
 
 
@@ -84,7 +83,6 @@ setInterval(() => {
 const moreProjectsBtn = document.querySelector('.more-btn');
 const moreProjects = document.getElementById('more-projects');
 
-console.log(moreProjects);
 
 moreProjectsBtn.addEventListener('click', () => {
 
@@ -93,4 +91,35 @@ moreProjectsBtn.addEventListener('click', () => {
     else moreProjectsBtn.innerHTML = 'Show less';
 
     moreProjects.classList.toggle('more-projects');
+})
+
+
+
+/////////////////////////////////
+/////////Functionality
+
+const contactForm = document.querySelector('.section-book');
+const resumeDownloadBtn = document.querySelector('.discover');
+
+
+/////////////////HEADER
+
+//contact button
+contactBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: contactForm.offsetTop,
+        behavior: 'smooth'
+    });
+});
+
+//resume download
+resumeDownloadBtn.addEventListener('click', () => {
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = './files/resume.png'; // Replace with the actual file path or URL
+    downloadLink.download = 'resume.png'; // Replace with the desired filename and extension
+
+    // Trigger a click event on the anchor element to initiate the download
+    downloadLink.click();
+
 })
