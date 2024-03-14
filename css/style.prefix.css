@@ -344,7 +344,7 @@ body {
     padding: 1rem 10rem;
     transition: transform .5s;
     transform: rotate(40deg);
-    background-color: #2600ff;
+    background-color: #322486;
     transform-origin: left;
     animation: contact-anim .3s linear;
     animation-delay: 2.5s;
@@ -474,7 +474,7 @@ body {
 
 .footer {
   font-size: 1.2rem;
-  background-color: #333;
+  background-color: #141530;
   padding: 8rem 8rem 20rem 8rem; }
   .footer__logo-box {
     text-align: center; }
@@ -493,7 +493,7 @@ body {
       margin-right: 1rem; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
-    background-color: #333;
+    background-color: #141530;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -506,8 +506,11 @@ body {
     padding-top: 2rem;
     border-top: 1px solid #777;
     display: inline-block;
-    hyphens: auto;
-    text-wrap: pretty; }
+    text-wrap: pretty;
+    margin-left: 15rem; }
+    @media (max-width: 900px) {
+      .footer__copyright {
+        margin-left: 0rem; } }
 
 .navigation__checkbox {
   visibility: hidden;
