@@ -19,7 +19,7 @@ const contactBtn = document.querySelector('.header__contact-now');
 
 setTimeout(() => {
     contactBtn.style.opacity = 1;
-}, 3000);
+}, 3100);
 
 
 //cursor
