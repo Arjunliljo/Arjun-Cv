@@ -122,4 +122,41 @@ resumeDownloadBtn.addEventListener('click', () => {
     // Trigger a click event on the anchor element to initiate the download
     downloadLink.click();
 
+});
+
+//techs
+const techBox = document.querySelector('.tech__box');
+const techBtn = document.querySelector('.tech-btn');
+
+const techItems = document.querySelectorAll('.techs');
+
+let techDisplay = 2;
+
+renderTechs(techDisplay);
+
+techBtn.addEventListener('click', () => {
+    console.log(techItems[techDisplay - 1]);
+    techItems[techDisplay - 1].classList.add('u-margin-bottom-big');
+
+    if (techDisplay >= techItems.length) {
+
+    }
+    else techDisplay += 2;
+
+    renderTechs(techDisplay);
 })
+
+function renderTechs(num) {
+
+    techBox.innerHTML = '';
+
+    for (let i = 0; i < num; i++) {
+
+        if (!techItems[i]) {
+            return;
+        }
+
+        techBox.append(techItems[i]);
+    }
+    techItems[num - 1].classList.add('u-margin-bottom-big')
+}
