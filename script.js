@@ -2,7 +2,10 @@
 const popup = document.querySelector('.popup');
 const bookNow = document.querySelectorAll('.book-now');
 const discover = document.querySelector('.discover')
+
+
 const sectionTours = document.querySelector('#section-tours');
+const sectionStrories = document.querySelector('.section-stories');
 
 //components
 const subHeading = document.querySelector('.primery-title--sub');
@@ -133,17 +136,47 @@ const techItems = document.querySelectorAll('.techs');
 let techDisplay = 2;
 
 renderTechs(techDisplay);
-
+console.log(sectionStrories);
 techBtn.addEventListener('click', () => {
-    console.log(techItems[techDisplay - 1]);
-    techItems[techDisplay - 1].classList.add('u-margin-bottom-big');
+
+    if (techDisplay === techItems.length - 2) {
+        techBtn.innerHTML = 'Less →'
+    }
+    else {
+        techBtn.innerHTML = 'More →';
+    };
 
     if (techDisplay >= techItems.length) {
 
-    }
-    else techDisplay += 2;
+        techDisplay = 2;
 
-    renderTechs(techDisplay);
+        renderTechs(techDisplay);
+
+        techBtn.classList.remove('u-margin-top-mid');
+
+        const element = techItems[0];
+        const rect = element.getBoundingClientRect();
+        const offset = rect.top - 200;
+
+        window.scrollBy({
+            top: offset,
+        });
+
+        return;
+    }
+
+    const topOffset = window.innerHeight > 800 ? 600 : 300;
+
+    window.scrollBy({
+        top: topOffset,
+        behavior: 'smooth'
+    });
+
+    techBox.append(techItems[techDisplay++])
+    techBox.append(techItems[techDisplay++])
+
+    techBtn.classList.add('u-margin-top-mid');
+
 })
 
 function renderTechs(num) {
