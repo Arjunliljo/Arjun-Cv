@@ -229,3 +229,26 @@ form.addEventListener('submit', (e) => {
         alert("Failed to send email. Please try again later.");
     });
 })
+
+//footer
+const projects = document.querySelector('.projects');
+const about = document.querySelector('.about');
+
+projects.addEventListener('click', viewDown);
+about.addEventListener('click', viewDown);
+
+function viewDown() {
+    setTimeout(() => {
+        let scrollAmount = 300; // Default scroll amount
+
+        // Check if the viewport width is below a certain threshold (e.g., tablet or smaller screens)
+        if (window.innerWidth <= 900) { // Adjust the threshold as needed
+            scrollAmount = 200; // Set the scroll amount to 100 for tablet or smaller screens
+        }
+
+        window.scrollBy({
+            top: scrollAmount,
+            behavior: 'smooth' // Optional, for smooth scrolling
+        });
+    }, 1000);
+}
