@@ -19,6 +19,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
         <script defer src="script.js"></script>
+
+        <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         
         <title>Arjun Cv</title>
     </head>
@@ -648,6 +650,7 @@
 
                 <div class="book">
                     <div class="book__form">
+
                        <form action="" class="form">
                             <div class="u-margin-bottom-mid">
                                 <h2 class="heading-secondary">
@@ -666,7 +669,7 @@
                             </div>
 
                             <div class="form__group">
-                               <textarea name="" id="textArea" class="form__textArea" placeholder="Write Message"></textarea>
+                               <textarea name="" id="message" class="form__textArea" placeholder="Write Message"></textarea>
                             </div>
 
                             <div class="form__group">
@@ -687,7 +690,7 @@
                                  </div>
                             </div>
 
-                            <div class="form__group u-margin-top-mid share-thought-btn">
+                            <div class="form__group u-margin-top-mid share-thought-btn" id="form_button">
                                 <button class="form-btn btn btn-blue">send &rarr;</button>
                             </div>
                          
@@ -754,6 +757,7 @@
 
         </div>
 
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     </body>
 
 </html>

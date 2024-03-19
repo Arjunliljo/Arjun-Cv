@@ -193,3 +193,39 @@ function renderTechs(num) {
     }
     techItems[num - 1].classList.add('u-margin-bottom-big')
 }
+
+
+//Contact form
+const email = document.getElementById('email');
+const recieptentName = document.getElementById('name');
+const message = document.getElementById('message');
+
+const button = document.getElementById('form_button');
+const form = document.querySelector('.form');
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    console.log(email.value);
+    console.log(recieptentName.value);
+    console.log(message.value);
+
+    (function () {
+        emailjs.init({
+            publicKey: "sBVnyjGeV75OFf_fE",
+        });
+    })();
+
+    emailjs.send("arjun7180@gmail.com", "template_ywm8znt", {
+        from_name: recieptentName.value,
+        email_id: email.value,
+        message: message.value
+    }).then(function (response) {
+        console.log("Email sent successfully!", response);
+        alert("Email sent successfully!");
+    }, function (error) {
+        console.error("Error sending email:", error);
+        alert("Failed to send email. Please try again later.");
+    });
+})
