@@ -47,7 +47,7 @@
     }
     &__image{
         height: inherit;
-        transform: translateX(-4rem) scale(1.5);
+        transform: scale(1);
         transition: transform 1s;
     }
     &__caption{
@@ -70,7 +70,7 @@
     }
 
     &:hover &__image{
-        transform: translateX(-4rem) scale(1);
+        transform: scale(1);
         filter: blur(2px) brightness(80%);
     }
 

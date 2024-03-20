@@ -1127,7 +1127,7 @@ body {
         transform: translateX(-3rem) skewX(0deg); } }
   .story__image {
     height: inherit;
-    transform: translateX(-4rem) scale(1.5);
+    transform: scale(1);
     transition: transform 1s; }
   .story__caption {
     text-transform: uppercase;
@@ -1145,7 +1145,7 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__image {
-    transform: translateX(-4rem) scale(1);
+    transform: scale(1);
     filter: blur(2px) brightness(80%); }
   @media (max-width: 900px) {
     .story__text h3 {

@@ -136,7 +136,7 @@ const techItems = document.querySelectorAll('.techs');
 let techDisplay = 2;
 
 renderTechs(techDisplay);
-console.log(sectionStrories);
+
 techBtn.addEventListener('click', () => {
 
     if (techDisplay === techItems.length - 2) {
