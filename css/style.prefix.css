@@ -1344,7 +1344,7 @@ body {
   margin-top: -10rem; }
 
 .section-stories {
-  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15rem, 100% 0, 100% 100%, 0 100%);
   width: 100%;
   margin-top: -18rem;
   padding: 10rem 0 10rem 0;
