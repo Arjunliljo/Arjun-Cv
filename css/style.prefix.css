@@ -984,7 +984,7 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #0059ff, #2e0249), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #0059ff, #2e0249), url(../img/traveller-image.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-4.jpg);
       background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(../img/nat-6.jpg); }
@@ -1051,7 +1051,7 @@ body {
   .card__price-value {
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 6rem;
+    font-size: 4rem;
     margin-bottom: 8rem; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
