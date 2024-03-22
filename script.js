@@ -252,3 +252,20 @@ function viewDown() {
         });
     }, 1000);
 }
+
+//Project
+
+const travellerBtn = document.querySelector('.traveller-btn');
+const maptyBtn = document.querySelector('.mapty-btn');
+const pigGameBtn = document.querySelector('.game-btn');
+
+travellerBtn.addEventListener('click', () => {
+
+    const heading = popup.querySelector('h2');
+
+    heading.innerHTML = 'TRAVELLER';
+
+    popup.querySelector('h3').innerHTML = 'Overview';
+
+
+})

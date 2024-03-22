@@ -26,27 +26,28 @@
         background-color: white;
         box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
         border-radius: 3px;
-        display: table;
+        display: flex;
         opacity: 0;
         transform: scale(.3);
         transition : all .5s .2s;
-        @include respond(tabPort){
-            
+        @include respond(tabPort){ 
             width: 85%;
-
         }
     }
 
     &__left{
         width: 34%;
         overflow: hidden;
-        display: table-cell;
-        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        background-color: rgb(255, 255, 255);
 
         @include respond(tabPort){
             display: block;
             background-color: transparent;
-            width: 100%;
+            width: 34%;
         }
     }
     &__right{
@@ -76,8 +77,9 @@
         }
     }
     &__img{
-        width: 100%;
-        background-size: contain;
+        width: 90%;
+        height: 90%;
+        object-fit: fill;
         transform: scale(1.1);
         @include respond(tabPort){
             float: left;
