@@ -259,6 +259,10 @@ const travellerBtn = document.querySelector('.traveller-btn');
 const maptyBtn = document.querySelector('.mapty-btn');
 const pigGameBtn = document.querySelector('.game-btn');
 
+const popupImg = document.querySelector('.popup__img');
+const projectLive = document.querySelector('.project-live');
+const projectGit = document.querySelector('.project-github');
+
 travellerBtn.addEventListener('click', () => {
 
     const heading = popup.querySelector('h2');
@@ -267,5 +271,31 @@ travellerBtn.addEventListener('click', () => {
 
     popup.querySelector('h3').innerHTML = 'Overview';
 
+    popupImg.src = '../img/travellerImg.png';
+
+    projectLive.href = "https://traveller-olive.vercel.app/";
+    projectGit.href = "https://github.com/Arjunliljo/Traveller.git";
+
+    popup.querySelector('p').innerHTML = `    
+    This project intricately utilizes clip-path animations to craft visually captivating effects, enhancing user interface engagement. Through CSS, geometric shapes are defined with precision, utilizing properties like clip-path for shape manipulation and transitions for seamless animation. JavaScript augments interactivity by dynamically adjusting clip-path parameters based on user interactions. The project prioritizes optimization for browser rendering and animation smoothness, ensuring a seamless user experience. By leveraging advanced CSS techniques and JavaScript functionality, this project demonstrates adeptness in modern web animation, setting a high standard for visual design and interactivity.`;
+
+})
+maptyBtn.addEventListener('click', () => {
+
+    const heading = popup.querySelector('h2');
+
+    heading.innerHTML = 'The Mapty';
+
+    popup.querySelector('h3').innerHTML = 'Overview';
+
+    popupImg.src = '../img/maptyMapImg.jpg.png';
+
+    popupImg.style.marginLeft = '2rem';
+
+    projectLive.href = "https://arjunliljo.github.io/Mark/";
+    projectGit.href = "https://github.com/Arjunliljo/Mark.git";
+
+    popup.querySelector('p').innerHTML = `    
+    This project exemplifies adeptness in object-oriented design, integrating mapping libraries, leveraging browser storage, ensuring responsiveness, and fostering interactivity. Through meticulous class organization and inheritance, it delivers a scalable and maintainable codebase. Integration with mapping libraries like Leaflet enriches user experience, allowing for interactive visualization of workout data. Utilization of browser localStorage ensures seamless data persistence across sessions, enhancing user convenience. The interface is designed to be responsive, adapting gracefully to various devices and screen sizes. Robust event handling mechanisms facilitate smooth user interactions, from form submissions to map interactions, providing a seamless and intuitive user experience. Overall, this project showcases a comprehensive skill set and attention to detail, making it a compelling asset for any software development role.`;
 
 })

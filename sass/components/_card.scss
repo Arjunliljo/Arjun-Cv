@@ -35,14 +35,14 @@
             background-color: $color-darker;
         }
         &--back{
-            background-color: rgb(47, 0, 255);
+          //  background-color: rgb(47, 0, 255);
             transform: rotateY(180deg);
             margin: 0 auto;
             &-1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
             &-2{
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
             }
             &-3{
                 background-image: linear-gradient(to right bottom, $color-primery-light, $color-primery-dark);
@@ -81,7 +81,7 @@
         }
         &--2{
             background-image: url(../img/nat-4.jpg);
-            background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-6.jpg);
+            background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(https://img.freepik.com/free-vector/drawing-concept-vintage-world-map_52683-26379.jpg?t=st=1711204289~exp=1711207889~hmac=2aaa29c3c155af0133a96aab428805c82892819b951801ecaa66df9ac05fac45&w=900);
         }
         &--3{
             background-image: url(../img/nat-3.jpg);

@@ -976,13 +976,12 @@ body {
     .card__side--front {
       background-color: #141530; }
     .card__side--back {
-      background-color: #2f00ff;
       transform: rotateY(180deg);
       margin: 0 auto; }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #0059ff, #2e0249); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #fbfcc5, #28b485); }
+        background-image: linear-gradient(to right bottom, #7edf6f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #ff06ff, #610047); }
   .card--text {
@@ -1001,7 +1000,7 @@ body {
       background-image: linear-gradient(to right bottom, #0059ff, #2e0249), url(../img/traveller-image.jpg); }
     .card__picture--2 {
       background-image: url(../img/nat-4.jpg);
-      background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(https://img.freepik.com/free-vector/drawing-concept-vintage-world-map_52683-26379.jpg?t=st=1711204289~exp=1711207889~hmac=2aaa29c3c155af0133a96aab428805c82892819b951801ecaa66df9ac05fac45&w=900); }
     .card__picture--3 {
       background-image: url(../img/nat-3.jpg);
       background-image: linear-gradient(to right bottom, #ff06ff, #610047), url(../img/The-Pig-game.jpg); }
