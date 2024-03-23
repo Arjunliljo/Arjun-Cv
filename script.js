@@ -80,21 +80,6 @@ setInterval(() => {
 }, 100);
 
 
-///////////////////////
-//////Projects 
-
-const moreProjectsBtn = document.querySelector('.more-btn');
-const moreProjects = document.getElementById('more-projects');
-
-
-moreProjectsBtn.addEventListener('click', () => {
-
-    if (moreProjectsBtn.innerHTML === 'Show less') moreProjectsBtn.innerHTML = 'More';
-
-    else moreProjectsBtn.innerHTML = 'Show less';
-
-    moreProjects.classList.toggle('more-projects');
-})
 
 
 
@@ -253,7 +238,13 @@ function viewDown() {
     }, 1000);
 }
 
-//Project
+
+///////////////////////
+//////Projects 
+
+
+const moreProjectsBtn = document.querySelector('.more-btn');
+const moreProjects = document.getElementById('more-projects');
 
 const travellerBtn = document.querySelector('.traveller-btn');
 const maptyBtn = document.querySelector('.mapty-btn');
@@ -262,6 +253,18 @@ const pigGameBtn = document.querySelector('.game-btn');
 const popupImg = document.querySelector('.popup__img');
 const projectLive = document.querySelector('.project-live');
 const projectGit = document.querySelector('.project-github');
+
+
+moreProjectsBtn?.addEventListener('click', () => {
+
+    if (moreProjectsBtn.innerHTML === 'Show less') moreProjectsBtn.innerHTML = 'More';
+
+    else moreProjectsBtn.innerHTML = 'Show less';
+
+    moreProjects.classList.toggle('more-projects');
+
+})
+
 
 travellerBtn.addEventListener('click', () => {
 
@@ -278,7 +281,6 @@ travellerBtn.addEventListener('click', () => {
 
     popup.querySelector('p').innerHTML = `    
     This project intricately utilizes clip-path animations to craft visually captivating effects, enhancing user interface engagement. Through CSS, geometric shapes are defined with precision, utilizing properties like clip-path for shape manipulation and transitions for seamless animation. JavaScript augments interactivity by dynamically adjusting clip-path parameters based on user interactions. The project prioritizes optimization for browser rendering and animation smoothness, ensuring a seamless user experience. By leveraging advanced CSS techniques and JavaScript functionality, this project demonstrates adeptness in modern web animation, setting a high standard for visual design and interactivity.`;
-
 })
 maptyBtn.addEventListener('click', () => {
 
@@ -297,5 +299,22 @@ maptyBtn.addEventListener('click', () => {
 
     popup.querySelector('p').innerHTML = `    
     This project exemplifies adeptness in object-oriented design, integrating mapping libraries, leveraging browser storage, ensuring responsiveness, and fostering interactivity. Through meticulous class organization and inheritance, it delivers a scalable and maintainable codebase. Integration with mapping libraries like Leaflet enriches user experience, allowing for interactive visualization of workout data. Utilization of browser localStorage ensures seamless data persistence across sessions, enhancing user convenience. The interface is designed to be responsive, adapting gracefully to various devices and screen sizes. Robust event handling mechanisms facilitate smooth user interactions, from form submissions to map interactions, providing a seamless and intuitive user experience. Overall, this project showcases a comprehensive skill set and attention to detail, making it a compelling asset for any software development role.`;
+
+})
+pigGameBtn.addEventListener('click', () => {
+
+    const heading = popup.querySelector('h2');
+
+    heading.innerHTML = 'Pig Game';
+
+    popupImg.src = '../img/piggsGame.jpg';
+
+    popupImg.style.marginLeft = '2rem';
+
+    projectLive.href = "https://github.com/Arjunliljo/PigGame.git";
+    projectGit.href = "https://arjunliljo.github.io/PigGame/";
+
+    popup.querySelector('p').innerHTML = `    
+The Pig Game is a simple yet engaging JavaScript-based web application. It offers an interactive experience where players roll dice, accumulating points while strategizing to avoid risks of losing their turn. The game employs dynamic DOM manipulation to update scores and display dice rolls instantly, enhancing user engagement. Utilizing JavaScript's event-driven architecture, it ensures smooth gameplay and responsive feedback to player actions. With a minimalist design and efficient code structure, the Pig Game delivers an immersive gaming experience across various devices. Its lightweight nature and seamless functionality make it an ideal choice for casual gamers and enthusiasts alike, highlighting the versatility and creativity achievable through JavaScript development`;
 
 })
