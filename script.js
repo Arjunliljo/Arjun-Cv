@@ -37,6 +37,8 @@ let i = 0;
 let devCount = 0;
 let isDev = true;
 
+
+
 function startAnimLeftToRight() {
 
     const devAnim = setInterval(() => {
@@ -318,3 +320,33 @@ pigGameBtn.addEventListener('click', () => {
 The Pig Game is a simple yet engaging JavaScript-based web application. It offers an interactive experience where players roll dice, accumulating points while strategizing to avoid risks of losing their turn. The game employs dynamic DOM manipulation to update scores and display dice rolls instantly, enhancing user engagement. Utilizing JavaScript's event-driven architecture, it ensures smooth gameplay and responsive feedback to player actions. With a minimalist design and efficient code structure, the Pig Game delivers an immersive gaming experience across various devices. Its lightweight nature and seamless functionality make it an ideal choice for casual gamers and enthusiasts alike, highlighting the versatility and creativity achievable through JavaScript development`;
 
 })
+
+
+// navigation functionality
+const checkBox = document.getElementById('navi__toggle');
+const navLinkes = document.querySelectorAll('.navigation__item');
+
+
+navLinkes.forEach((element, i) => {
+
+    element.addEventListener('click', checkBoxFun(i, navLinkes.length));
+});
+
+
+function checkBoxFun(i, length) {
+
+    return () => {
+
+        if (checkBox.checked) checkBox.checked = false;
+        else checkBox.checked = true;
+
+        if (i === 0 || i === length - 1) return;
+
+        setTimeout(() => {
+            window.scrollBy({
+                top: 230,
+                behavior: 'smooth'
+            });
+        }, 500);
+    }
+}
