@@ -66,7 +66,7 @@ break point choices
 
 @keyframes bulb {
   0% {
-    color: #610047; }
+    color: #470034; }
   50% {
     color: #ff06ff; } }
 
@@ -533,7 +533,7 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .navigation__background {
-  background-image: radial-gradient(#5a027c, #07077c, #3C0753);
+  background-image: radial-gradient(#322486, #030637, black);
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -589,7 +589,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #610047;
+  color: #470034;
   transform: translateX(1rem); }
   @media (max-width: 900px) {
     .navigation__link:hover, .navigation__link:active {
@@ -792,7 +792,7 @@ body {
     height: 8rem;
     padding-bottom: .5rem;
     display: inline-block;
-    background: linear-gradient(to right, #ff06ff, #610047);
+    background: linear-gradient(to right, #ff06ff, #470034);
     background-clip: text;
     color: transparent;
     animation: bulb-2 7s linear infinite both; }
@@ -840,10 +840,10 @@ body {
         margin-top: 5rem; } }
   .btn-blue {
     color: #fff;
-    background-color: #610047;
+    background-color: #470034;
     font-size: 1.6rem; }
     .btn-blue::after {
-      background-color: #610047; }
+      background-color: #470034; }
   .btn--animated {
     animation: btnMoveUp 1s ease-out 0.75s;
     /* animation will be applied to the button even before animation start due to delay */
@@ -876,7 +876,7 @@ body {
 .btn-learn-more {
   background-color: transparent;
   font-size: 1.6rem;
-  color: #610047;
+  color: #470034;
   text-decoration: none;
   display: inline-block;
   padding-bottom: 3px;
@@ -892,7 +892,7 @@ body {
   .btn-learn-more:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0rem 1rem 1.4rem rgba(0, 0, 0, 0.25);
-    background-color: #610047;
+    background-color: #470034;
     color: #fff;
     animation: none; }
   .btn-learn-more:active {
@@ -983,7 +983,7 @@ body {
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #7edf6f, #28b485); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #ff06ff, #610047); }
+        background-image: linear-gradient(to right bottom, #ff06ff, #470034); }
   .card--text {
     text-transform: none; }
   .card:hover .card__side--front {
@@ -1003,7 +1003,7 @@ body {
       background-image: linear-gradient(to right bottom, #fbfcc5, #28b485), url(https://img.freepik.com/free-vector/drawing-concept-vintage-world-map_52683-26379.jpg?t=st=1711204289~exp=1711207889~hmac=2aaa29c3c155af0133a96aab428805c82892819b951801ecaa66df9ac05fac45&w=900); }
     .card__picture--3 {
       background-image: url(../img/nat-3.jpg);
-      background-image: linear-gradient(to right bottom, #ff06ff, #610047), url(../img/The-Pig-game.jpg); }
+      background-image: linear-gradient(to right bottom, #ff06ff, #470034), url(../img/The-Pig-game.jpg); }
   .card__heading {
     text-align: right;
     text-transform: uppercase;
@@ -1026,7 +1026,7 @@ body {
     .card__heading--span-2 {
       background-image: linear-gradient(to right, rgba(251, 252, 197, 0.8), rgba(40, 180, 133, 0.8)); }
     .card__heading--span-3 {
-      background-image: linear-gradient(to right, rgba(255, 6, 255, 0.8), rgba(97, 0, 71, 0.8)); }
+      background-image: linear-gradient(to right, rgba(255, 6, 255, 0.8), rgba(71, 0, 52, 0.8)); }
   .card__details {
     width: 60%;
     margin: 0 auto;
