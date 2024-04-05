@@ -50,6 +50,7 @@
 
         @include respond(tabPort){
             width: 12rem;
+            height: 12rem;
         }
     }
     &__text{
@@ -78,4 +79,9 @@
     height: 7rem;
     width: 7rem;
     margin: .5rem 0;
+
+    @include respond(tabPort){
+        height: 12rem;
+        width: 12rem;
+    }
 }
