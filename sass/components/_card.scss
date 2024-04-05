@@ -179,7 +179,7 @@
     only screen and (hover: none) {
             height: auto;
             border-radius: 3px;
-            background-color: $color-white;
+            background-color: transparent;
             box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
             &__side {

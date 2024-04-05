@@ -61,8 +61,10 @@ break point choices
 @keyframes cursor-anim {
   0% {
     opacity: 0; }
+  50% {
+    opacity: 1; }
   100% {
-    opacity: 1; } }
+    opacity: 0; } }
 
 @keyframes bulb {
   0% {
@@ -1074,7 +1076,7 @@ body {
     .card {
       height: auto;
       border-radius: 3px;
-      background-color: #fff;
+      background-color: transparent;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .card__side {
         height: auto;
@@ -1309,11 +1311,10 @@ body {
       transform: translateX(0%); } }
 
 .cursor {
-  height: 2.8rem;
+  height: 4rem;
   width: 1rem;
   margin-bottom: .3rem;
   background-color: #b8b8b8;
-  align-content: stretch;
   transition: opacity 1.2s;
   animation: cursor-anim 1.2s ease-out 2s infinite; }
 

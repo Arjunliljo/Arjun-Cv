@@ -106,8 +106,8 @@ contactBtn.addEventListener('click', () => {
 resumeDownloadBtn.addEventListener('click', () => {
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = './files/resume.png'; // Replace with the actual file path or URL
-    downloadLink.download = 'resume.png'; // Replace with the desired filename and extension
+    downloadLink.href = './files/Arjun-Cv-Resume.pdf'; // Replace with the actual file path or URL
+    downloadLink.download = 'Arjun-Cv-Resume.pdf'; // Replace with the desired filename and extension
 
     // Trigger a click event on the anchor element to initiate the download
     downloadLink.click();
