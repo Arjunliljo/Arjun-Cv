@@ -352,7 +352,7 @@ function checkBoxFun(i, length) {
 }
 
 function isTablet() {
-    // Define the threshold for tablet screen width (you can adjust this according to your needs)
+    
     var tabletWidth = 768; // Example threshold for tablets
 
     // Check if the screen width is less than or equal to the tablet threshold
