@@ -1204,7 +1204,7 @@ body {
     border-bottom: 3px solid transparent;
     display: block;
     width: 90%;
-    transition: all .3s;
+    transition: all 0.3s;
     position: absolute;
     right: -125%;
     top: 0%; }
@@ -1226,7 +1226,7 @@ body {
     border-bottom: 3px solid transparent;
     display: block;
     width: 90%;
-    transition: all .3s; }
+    transition: all 0.3s; }
     @media (max-width: 900px) {
       .form__input {
         font-size: 3rem;
@@ -1241,11 +1241,11 @@ body {
       color: #777; }
   .form__label {
     margin-left: 2rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     display: block;
     font-size: 1.2rem;
     font-weight: 700;
-    transition: all .3s; }
+    transition: all 0.3s; }
     @media (max-width: 900px) {
       .form__label {
         font-size: 1.8rem;
@@ -1275,11 +1275,11 @@ body {
     border: 0.4rem solid #ff06ff;
     display: inline-block;
     position: absolute;
-    top: -.7rem;
+    top: -0.7rem;
     left: 0; }
     @media (max-width: 900px) {
       .form__radio-button {
-        top: -.4rem;
+        top: -0.4rem;
         height: 4rem;
         width: 4rem;
         left: -1rem; } }
@@ -1295,7 +1295,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
-      transition: opacity .3s; }
+      transition: opacity 0.3s; }
       @media (max-width: 900px) {
         .form__radio-button::after {
           height: 2rem;
