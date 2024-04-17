@@ -321,7 +321,7 @@ body {
       color: gray;
       cursor: pointer;
       backface-visibility: hidden;
-      transition: transform .2s; }
+      transition: transform 0.2s; }
       @media (max-width: 900px) {
         .header__social-icon {
           top: auto;
@@ -343,17 +343,17 @@ body {
     right: -9rem;
     top: -3rem;
     padding: 1rem 10rem;
-    transition: transform .5s;
+    transition: transform 0.5s;
     transform: rotate(40deg);
     background-color: #322486;
     transform-origin: left;
     opacity: 0;
-    animation: contact-anim .3s linear;
+    animation: contact-anim 0.3s linear;
     animation-delay: 3s;
     cursor: pointer;
     text-transform: uppercase;
     color: #fbfcc5;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
     border: none; }
@@ -391,7 +391,9 @@ body {
 
 .git-hub {
   transform: translate(10rem, -10rem);
-  animation: social-anim 1.5s ease-in, social-anim-gitHub 1.5s ease-in 0.5s; }
+  animation: social-anim 1.5s ease-in, social-anim-gitHub 1.5s ease-in 0.5s;
+  z-index: 1000;
+  cursor: pointer; }
   .git-hub:hover {
     transform: translate(10rem, -10rem) scale(1.5);
     fill: silver; }
@@ -404,6 +406,7 @@ body {
       animation: git-anim-phone 2s ease; } }
 
 .linked-in {
+  z-index: 1000;
   transform: translate(14rem, -2rem);
   animation: social-anim 1.5s ease-in, social-anim-linkedIn 1.5s ease-in 0.5s; }
   .linked-in:hover {
@@ -418,6 +421,7 @@ body {
       animation: linkedIn-anim-phone 3s cubic-bezier(0.6, -0.02, 0.79, 0.5); } }
 
 .instagram {
+  z-index: 1000;
   transform: translate(12.5rem, 7rem);
   animation: social-anim 1.5s ease-in, social-anim-instagram 1.5s ease-in 0.5s; }
   .instagram:hover {
