@@ -403,7 +403,8 @@ body {
   @media (max-width: 900px) {
     .git-hub {
       transform: translate(-20rem, -25rem);
-      animation: git-anim-phone 2s ease; } }
+      animation: git-anim-phone 2s ease;
+      z-index: 10; } }
 
 .linked-in {
   z-index: 1000;
@@ -414,11 +415,13 @@ body {
     fill: silver; }
     @media (max-width: 900px) {
       .linked-in:hover {
-        transform: translate(-10rem, -25rem); } }
+        transform: translate(-10rem, -25rem);
+        z-index: 10; } }
   @media (max-width: 900px) {
     .linked-in {
       transform: translate(-10rem, -25rem);
-      animation: linkedIn-anim-phone 3s cubic-bezier(0.6, -0.02, 0.79, 0.5); } }
+      animation: linkedIn-anim-phone 3s cubic-bezier(0.6, -0.02, 0.79, 0.5);
+      z-index: 10; } }
 
 .instagram {
   z-index: 1000;
@@ -433,7 +436,8 @@ body {
   @media (max-width: 900px) {
     .instagram {
       transform: translate(0rem, -25rem);
-      animation: insta-anim-phone 4s cubic-bezier(1, -0.01, 0.79, 0.5); } }
+      animation: insta-anim-phone 4s cubic-bezier(1, -0.01, 0.79, 0.5);
+      z-index: 10; } }
 
 .row {
   max-width: 114rem;
